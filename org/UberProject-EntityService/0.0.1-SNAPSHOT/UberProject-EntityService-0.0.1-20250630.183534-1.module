@@ -1,0 +1,76 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org",
+    "module": "UberProject-EntityService",
+    "version": "0.0.1-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "UberProject-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "UberProject-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 12890,
+          "sha512": "22a5d752107f282e5f088c3d0ba836c75670625046af2a02228e74a91c8354736ac0aead178f1ffed3cc11200ba66e98dfae4bce605085609d05a41e6754c292",
+          "sha256": "5a7ef45d5c1bf4ffc179075858e01d2b3a728226b27c9745b7ca78e020b8b014",
+          "sha1": "a6efc02af258216a44a01b99f5e8643aabebdc32",
+          "md5": "17429557b0ab751959c10c97d522c0c5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa",
+          "version": {
+            "requires": "3.5.3"
+          }
+        },
+        {
+          "group": "com.mysql",
+          "module": "mysql-connector-j",
+          "version": {
+            "requires": "9.2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "UberProject-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "url": "UberProject-EntityService-0.0.1-SNAPSHOT-plain.jar",
+          "size": 12890,
+          "sha512": "22a5d752107f282e5f088c3d0ba836c75670625046af2a02228e74a91c8354736ac0aead178f1ffed3cc11200ba66e98dfae4bce605085609d05a41e6754c292",
+          "sha256": "5a7ef45d5c1bf4ffc179075858e01d2b3a728226b27c9745b7ca78e020b8b014",
+          "sha1": "a6efc02af258216a44a01b99f5e8643aabebdc32",
+          "md5": "17429557b0ab751959c10c97d522c0c5"
+        }
+      ]
+    }
+  ]
+}
