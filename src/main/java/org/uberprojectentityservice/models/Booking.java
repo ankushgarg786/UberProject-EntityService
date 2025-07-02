@@ -17,6 +17,7 @@ public class Booking extends BaseModel{
     private Review review; // we have defined a 1:1 relationship between booking and review
 
     @Enumerated(value = EnumType.STRING)
+    @Column(name = "booking_status")
     private BookingStatus bookingStatus;
 
     @Temporal(value = TemporalType.TIMESTAMP)
