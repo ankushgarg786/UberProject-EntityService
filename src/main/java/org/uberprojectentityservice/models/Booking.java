@@ -11,6 +11,9 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(indexes = {
+        @Index(columnList = "driver_id")
+})
 public class Booking extends BaseModel{
 
     @OneToOne(mappedBy = "booking", cascade = {CascadeType.PERSIST, CascadeType.REMOVE}) //cascade = {PERSIST, REMOVE} means: When a Booking is saved, its Review is also saved.,When a Booking is deleted, its Review is also deleted.
@@ -33,5 +36,11 @@ public class Booking extends BaseModel{
 
     @ManyToOne
     private Passenger passenger;
+
+    @OneToOne
+    private ExactLocation startLocation;
+
+    @OneToOne
+    private ExactLocation endLocation;
 
 }
